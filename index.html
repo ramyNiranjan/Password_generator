@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/7653ca745b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="main.css" />
+    <title>PassGen</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="pass-display">
+        <input
+          type="text"
+          name=""
+          id="passText"
+          placeholder="Password will be dispaly here"
+        />
+        <i class="fas fa-copy fa-lg"></i>
+      </div>
+
+      <div class="selectors">
+        <form>
+          <div class="one">
+            <label for="length">Length Of Password</label>
+            <input type="text" name="" id="length" />
+          </div>
+          <div class="two">
+            <label for="num">Add Numbers</label>
+            <input type="checkbox" name="" id="num" checked="" />
+          </div>
+          <div class="three">
+            <label for="lowerLetter">Add Lower-Letters</label>
+            <input type="checkbox" name="" id="lowerLetter" checked="" />
+          </div>
+          <div class="four">
+            <label for="upperLetter">Add Upper-Letters</label>
+            <input type="checkbox" name="" id="upperLetter" checked="" />
+          </div>
+          <div class="five">
+            <label for="symbol">Add symbols</label>
+            <input type="checkbox" name="" id="symbol" checked="" />
+          </div>
+          <input type="submit" value="Generate" id="submit" />
+        </form>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

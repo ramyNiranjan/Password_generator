@@ -1,0 +1,102 @@
+*,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  background: #2c35af;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.pass-display {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+#passText {
+  width: 70%;
+  padding: 10px 4px;
+  border: 2px solid #0c8f1d;
+  outline: none;
+  color: #0c1048;
+}
+i {
+  padding: 10.3px 4px;
+  color: #fff;
+  border: 2px solid #0c8f1d;
+  cursor: pointer;
+  transition: all 500ms;
+  position: relative;
+}
+i::after {
+  content: 'Copy';
+  z-index: -1;
+  font-size: 15px;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: all 1s;
+}
+i:hover {
+  background: #0c8f1d;
+}
+i:hover::after {
+  z-index: 1;
+}
+i:active {
+  background: #0c1048;
+}
+i:active::after {
+  content: 'Copied';
+  z-index: 1;
+}
+.main-container {
+  background: #0c1048;
+  display: flex;
+  width: 350px;
+  height: 300px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.selectors form {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  line-height: 2;
+}
+.one,
+.two,
+.three,
+.four,
+.five {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 40px;
+}
+input[type='submit'] {
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  border-radius: 20px;
+  border-style: none;
+  outline: none;
+  position: relative;
+  transition: all 1s;
+  cursor: pointer;
+}
+#length {
+  width: 15%;
+  height: 10%;
+}
+
+input[type='submit']:hover {
+  background: #097217;
+}
+
+label,
+input[type='checkbox'] {
+  cursor: pointer;
+}
