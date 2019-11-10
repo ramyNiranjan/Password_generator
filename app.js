@@ -65,6 +65,7 @@ form.addEventListener('submit',e=>{
         finalValue.slice(0, passLen)
         passText.style.color='#070000'
         passText.value = finalValue.slice(0, passLen)
+        
     } if (isNaN(parseInt(passLen))){
         passText.style.color = '#E71313'
         passText.value='Invalid number'
@@ -87,4 +88,6 @@ clipBoard.addEventListener('click',e=>{
     document.execCommand('copy')
     textArea.remove()
     alert('Password copied')
+    form.reset()
+    passText.value=''
 })

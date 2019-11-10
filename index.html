@@ -19,6 +19,7 @@
           name=""
           id="passText"
           placeholder="Password will be dispaly here"
+          readonly
         />
         <i class="fas fa-copy fa-lg"></i>
       </div>
@@ -26,24 +27,28 @@
       <div class="selectors">
         <form>
           <div class="one">
-            <label for="length">Length Of Password</label>
+            <label for="length">Type Length Of Password</label>
             <input type="text" name="" id="length" />
           </div>
           <div class="two">
-            <label for="num">Add Numbers</label>
-            <input type="checkbox" name="" id="num" checked="" />
+            <label for="num">Add Numbers </label>
+            <input type="checkbox" name="" id="num" />
+            <span class="custom-checkbox"></span>
           </div>
           <div class="three">
             <label for="lowerLetter">Add Lower-Letters</label>
-            <input type="checkbox" name="" id="lowerLetter" checked="" />
+            <input type="checkbox" name="" id="lowerLetter" />
+            <span class="custom-checkbox"></span>
           </div>
           <div class="four">
             <label for="upperLetter">Add Upper-Letters</label>
-            <input type="checkbox" name="" id="upperLetter" checked="" />
+            <input type="checkbox" name="" id="upperLetter" />
+            <span class="custom-checkbox"></span>
           </div>
           <div class="five">
             <label for="symbol">Add symbols</label>
-            <input type="checkbox" name="" id="symbol" checked="" />
+            <input type="checkbox" name="" id="symbol" />
+            <span class="custom-checkbox"></span>
           </div>
           <input type="submit" value="Generate" id="submit" />
         </form>
