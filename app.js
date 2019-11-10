@@ -76,10 +76,8 @@ form.addEventListener('submit',e=>{
 
 
 clipBoard.addEventListener('click',e=>{
-    console.log('ddd')
     const textArea= document.createElement('textarea')
     const pass = passText.value
-    console.log(pass)
     if(!pass){
         return 
     }
