@@ -22,6 +22,8 @@ body {
   border: 2px solid #0c8f1d;
   outline: none;
   color: #0c1048;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 2px;
 }
 i {
   padding: 10.4px 4px;
@@ -67,6 +69,13 @@ i:active::after {
   color: #fff;
   line-height: 2;
 }
+.one {
+  font-weight: 700;
+}
+#length {
+  font-weight: 900;
+}
+
 .one,
 .two,
 .three,
